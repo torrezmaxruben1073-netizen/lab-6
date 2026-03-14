@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head class="container">
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Laguna Brava Ecotourism promotes sustainable travel and activities to the Laguna Brava lake in western Guatemala."
+    />
+    <title class="container">Laguna Brava Ecotourism</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav li {
+        list-style-type: none;
+      }
+      nav ul {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav li {
+        list-style-type: none;
+
+        display: inline-block;
+        padding: 10px;
+      }
+      /* unvisited link */
+      nav a:link {
+        color: #dcdcdc;
+      }
+
+      /* visited link */
+      nav a:visited {
+        color: #dcdcdc;
+      }
+
+      /* mouse over link */
+      nav a:hover {
+        color: white;
+      }
+
+      /* selected link */
+      nav a:active {
+        color: white;
+      }
+      hr {
+        border: none;
+        border-top: 3px solid gray;
+      }
+
+      h1 {
+        font-size: 6rem;
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto 50px auto;
+      }
+
+      .footer {
+        text-align: center;
+      }
+      form div {
+        margin-bottom: 15px;
+      }
+      .activity-col {
+        display: flex;
+        padding: 10px;
+      }
+      .activiy-row {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .experiance-form {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .experience_input {
+        width: 300px;
+      }
+      .textarea {
+        width: 100%;
+        height: 100px;
+      }
+      .label {
+        max-width: 960px;
+        margin: 0 auto 50px auto;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <header>
+      <img
+        src="img/panoramic-laguna-brava.jpeg"
+        alt="Laguna Brava lake"
+        title="Laguna Brava"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a href="#activities">Things to Do</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Explore Laguna Brava</h1>
+    </header>
+    <hr />
+
+    <main>
+      <article class="activiy-row">
+        <div>
+          <img
+            class="circle"
+            src="img/kayaking.jpeg"
+            alt="View of the lake with kayak on the horizon"
+          />
+        </div>
+        <div>
+          <h2>Kayaking</h2>
+          <p>
+            Cross the four kilometers in a kayak
+            <strong
+              >guided by a local guide.This guided visit is physically
+              demanding, and we recommend it for only those in excellent
+              physical</strong
+            >
+            condition.
+          </p>
+          <ul>
+            <li>
+              <span class="bold">Duration</span> Duration: 3 hours approx.
+            </li>
+            <li><span class="bold">Price:</span> Price: $40 USD</li>
+            <li><span class="bold">Minimum</span> Minimum: 1 pax</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="activiy-row">
+        <div>
+          <h2>Boat Rides</h2>
+          <p>
+            Board a rowing boat that takes to around the most beautiful parts of
+            the lake. This guided visit does not require physical effort.
+          </p>
+          <ul>
+            <li>
+              <span class="bold">Duration:</span>Duration: 3 hours approx.
+            </li>
+            <li><span class="bold">Price:</span>Price: $40 USD</li>
+            <li><span class="bold">Minimun:</span>Minimum: 4 pax</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            class="circle"
+            src="img/boat-ride.jpeg"
+            alt="View of the lake with a kayak on the horizon"
+          />
+        </div>
+      </article>
+    </main>
+
+    <aside>
+      <section>
+        <hr />
+        <h2>Have you traveled to Laguna Brava?</h2>
+
+        <p>We want to know about your experiences.</p>
+      </section>
+
+      <!-- A form asking for page viewer's experiences -->
+      <form id="textarea">
+        <div>
+          <div>
+            <label class="activity-col bold" for="name">Name: </label>
+          </div>
+          <input
+            class="experience_input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Write your name"
+          />
+        </div>
+        <div>
+          <div>
+            <label class="activity-col bold" for="email">Email: </label>
+          </div>
+          <input
+            class="experience_input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Write your email"
+          />
+        </div>
+        <div>
+          <div>
+            <label class="activity-col bold" for="experience"
+              >Experience:</label
+            >
+          </div>
+          <textarea
+            class="textarea"
+            class="label"
+            name="experience"
+            id="experience"
+            placeholder="Please share with us your experience."
+          ></textarea>
+          <input input class="activity-col" type="submit" value="Submit" />
+        </div>
+      </form>
+    </aside>
+
+    <footer>&copy; 2022 Laguna Brava Ecotourism</footer>
+  </body>
+</html>
